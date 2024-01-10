@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+:root {
+    --primary: #11998e;
+    --secondary: #38ef7d;
+    --white: #fff;
+    --gray: #f0ffff;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+}
+
+* {
+    color: #f0ffff;
+    font-family: 'Exo', sans-serif;
+}
+
+.JoinOuterContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.JoinInnerBorderContainer {
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
+    border-image-slice: 1;
+    border-radius: 2rem;
+    padding:4px;
+}
+.JoinInnerContainer {
+    width: 35rem;
+    padding: 1rem;
+    height: 23rem;
+    background: #1c1c1c;
+    border-radius: 1.85rem;
+}
+
+.heading {
+    text-align: center;
+    border-bottom: 0.1rem #f0ffff solid;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    /* animation-name: headingAnimation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite; */
+}
+
+/* @keyframes headingAnimation {
+    5% {
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    25% {
+        border-image: linear-gradient(to right, var(--primary), var(--secondary));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    30% {
+        background: linear-gradient(to right, var(--secondary), var(--primary));
+        background-clip: text;
+        -webkit-text-fill-color: transparent
+    }
+
+    40% {
+        border-image: linear-gradient(to right, var(--secondary), var(--primary));
+        background-clip: text;
+        -webkit-text-fill-color: transparent
+    }
+    55% {
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    65% {
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    85% {
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+} */
+
+.FormConatiner {
+    padding: 0rem 0.4rem;
+}
+
+.InputContainer {
+    position: relative;
+    padding: 1rem 0 0 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.inputField {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--gray);
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:placeholder-shown~.inputLabel {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+    }
+}
+
+.inputLabel {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.inputField:focus {
+    ~.inputLabel {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, var(--primary), var(--secondary));
+    border-image-slice: 1;
+}
+
+/* reset input */
+.inputField {
+
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
+}
+
+.ButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.submit-button {
+    background-color: #1c1c1c;
+    color: #f0ffff;
+    width: 8rem;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    font-weight: 600;
+    border: 0.15rem #d3e1e1 solid;
+    border-radius: 2rem;
+}
+
+.submit-button:hover {
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
+    border-image-slice: 1;
+    border-radius: 2rem;
+    padding: 0.7rem 1rem;
+}

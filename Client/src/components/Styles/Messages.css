@@ -1,0 +1,19 @@
+.MssgOuterContainer {
+    min-width: 20rem;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.MssgHeading {
+    text-align: center;
+
+}
+.MssgInnerContainer {
+    margin: 0;
+    position: relative;
+    border: 3px #454343 solid;
+    border-radius: 10px;
+    height: 85%;
+    display: grid;
+    grid-template-rows: 35rem 5rem;
+}

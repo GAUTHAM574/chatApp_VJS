@@ -1,0 +1,112 @@
+.DisplayOuterContainer {
+    padding: 1rem;
+    border:2px grey solid;
+    border-radius: 0.3rem;
+    background-color: #2e2e2e;
+}
+
+.DisplayInnerContainer {
+    position: relative;
+    min-height: 30rem;
+    max-height: 30rem;
+    overflow-y:scroll ;
+}
+
+/* RIGHT */
+
+.DisplayContainerRight {
+    margin: 5px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 15rem 20px;
+    float: right;
+    clear: both;
+}
+.messageContainerRight {
+    background-color: #84dddd;
+    padding: 3px 5px;
+    min-width: 5rem;
+    max-width: 15rem;
+    float: right;
+    color:black;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    overflow-wrap: break-word;
+}
+.RightBubble{
+    position:relative;
+    bottom: 0;
+    width:15px;
+    background-color: #84dddd;
+     /* background-color: red; */
+     height: auto;
+}
+.RightBubbleInner {
+    width: 15px;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    background-color: #2e2e2e;
+}
+
+/*LEFT*/
+
+.DisplayContainerLeft {
+    margin: 5px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 14px 16rem;
+    float: left;
+    clear: both;
+}
+.messageContainerLeft {
+    background-color: #e1c7d7;
+    padding: 3px 5px;
+    min-width: 5rem;
+    width: fit-content;
+    max-width: 15rem;
+    color:black;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    overflow-wrap: break-word;
+}
+.LeftBubble{
+    position:relative;
+    bottom: 0;
+    width:15px;
+    background-color: #e1c7d7;
+    height: auto;
+    margin: 0;
+}
+.LeftBubbleInner {
+    width: 15px;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background-color: #2e2e2e;
+}
+
+/* COMMON */
+
+.username{
+    color: #2a3232;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 2px;
+}
+
+.usermessage {
+    color: #021704;
+    max-width: 100%;
+    font-weight: 500;
+    overflow-wrap: break-word;
+}
+
+.time {
+    color: #2a3232;
+    font-size: 12px;
+    float: right;
+    font-weight: 800;
+    padding: 0 5px;
+}
+

@@ -1,0 +1,40 @@
+:root {
+    --primary: #11998e;
+    --secondary: #38ef7d;
+    --white: #fff;
+    --gray: #f0ffff;
+}
+html,head
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+}
+
+* {
+    color: #f0ffff;
+    font-family: 'Exo', sans-serif;
+}
+.ChatInnerContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin-top : 25px;
+    grid-template-columns: 24% 2px 74%;
+}
+.ColumnSeperator {
+    background-image: linear-gradient( to bottom , var(--primary), var(--secondary));
+    height: 42rem;
+    border-radius: 10px;
+}
+
+
+.RoomUser {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 5px;
+    border-bottom: 1px #565454 solid;
+    width: 100%;
+    font-size: large;
+    font-weight: 700;
+}
